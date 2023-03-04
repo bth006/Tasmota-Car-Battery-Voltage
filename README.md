@@ -3,7 +3,7 @@
 
 
 
-##Rules
+## Rules
 Rule1 puts esp into deep sleep
 Rule1 ON DIMMER#Boot DO RuleTimer1 60 ENDON ON Rules#Timer=1 DO DeepSleepTime 600 ENDON
 

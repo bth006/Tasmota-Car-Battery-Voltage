@@ -23,9 +23,9 @@ GPIO3 ADC Range
 
 
 ## HA YAML
-'name: "TasCar voltage"
+`name: "TasCar voltage"
        state_topic: "tele/tasmota_507B4C/SENSOR"
        value_template: "{{ value_json.ANALOG.Range1 }}"
-       unit_of_measurement: 'mV''
+       unit_of_measurement: 'mV'`
 
 

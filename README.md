@@ -28,4 +28,18 @@ name: "TasCar voltage"<br>
        value_template: "{{ value_json.ANALOG.Range1 }}"<br>
        unit_of_measurement: 'mV'<br>
 
+## Power consumption
+
+wemos style esp32s2<br>
+
+deepsleep -   42.6uA into 3.3v pin in   (voltage regulator still on board)<br>
+normal -   approx 50mA  into 3.3v pin in   (voltage regulator still on board)<br>
+<br>
+5V into HT7333 type voltage chip<br>
+deepsleep -   45.8uA into HT7333   (voltage regulator still on board)<br>
+<br>
+so Quiescent Current of HT7333 is approx 3uA<br>
+
+
+
 

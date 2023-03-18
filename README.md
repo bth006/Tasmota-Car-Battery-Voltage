@@ -5,7 +5,12 @@
 
 ## Rules
 Rule1 puts esp into deep sleep<br>
-Rule1 ON DIMMER#Boot DO RuleTimer1 60 ENDON ON Rules#Timer=1 DO DeepSleepTime 600 ENDON<br>
+Rule1 ON DIMMER#Boot DO RuleTimer1 60 ENDON ON Rules#Timer=1 DO DeepSleepTime 1200 ENDON<br>
+Rule2 puts esp into deep sleep if rule 1 is off or fails<br>
+Rule2 ON DIMMER#Boot DO RuleTimer2 60 ENDON ON Rules#Timer=2 DO DeepSleepTime 3600 ENDON<br>
+
+
+
 
 to see rule    enter rule1<br>
 to disable rule     rule1 0<br>
